@@ -22,7 +22,10 @@
 import argparse
 import sys
 
+from . import __version__
 from .dagwatch import watch_dag
+
+__author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
 
 # -- parse command line --
 
@@ -37,6 +40,8 @@ try:
     parser._optionals.title = 'Optional arguments'
 except AttributeError:
     pass
+
+parser.add_argument('-V', '--version', action='version', version=__version__)
 
 parser.add_argument('clusterid', help='ClusterId for Condor DAGMan process')
 parser.add_argument('-u', '--update-interval', type=int, default=2,
