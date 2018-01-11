@@ -20,6 +20,7 @@
 # OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 # OR OTHER DEALINGS IN THE SOFTWARE.
 
+from .dagwatch import watch_dag
 from ._version import get_versions
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'

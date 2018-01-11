@@ -26,8 +26,7 @@
 import argparse
 import sys
 
-from . import __version__
-from .dagwatch import watch_dag
+from . import (__version__, watch_dag)
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
 

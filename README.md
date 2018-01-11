@@ -25,3 +25,10 @@ $ python -m dagwatch 123456.0
 [2018-01-11 05:00:00]       0 |       0 |       0 |       0 |       0 |       0 |      21
 [2018-01-11 05:00:00] DAG has exited with exitcode 0
 ```
+
+Alternatively, the same can be done directly from python using `dagwatch.watch_dag()`:
+
+```python
+>>> from dagwatch import watch_dag
+>>> watch_dag(123456)
+```
